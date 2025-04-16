@@ -55,7 +55,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       <div class="mt-6 mb-4">
         Furthermore, according to CTFtime, SNI achieved the following placements:
         {
-          placements.toReversed().map((placement, _) => (
+          placements.toReversed().map((placement) => (
             <li class="items-center mt-1">
               In {placement.year}, SNI is ranked&nbsp;<span class="font-bold text-emerald-600 dark:text-emerald-400">#{placement.place}</span>&nbsp;in the world and&nbsp;<span class="font-bold text-emerald-600 dark:text-emerald-400">#{placement.countryPlace}</span>&nbsp;in Indonesia.
             </li>
